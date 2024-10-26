@@ -75,3 +75,5 @@ __pycache__.meta
 /[Aa]ssets/StreamingAssets/GGUF/*
 *.gguf
 /[Aa]ssets/TextMesh Pro/Resources/Fonts & Materials/*
+MEIRYO SDF.asset
+MEIRYO SDF.asset.meta
