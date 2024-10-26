@@ -74,3 +74,4 @@ __pycache__/
 __pycache__.meta
 /[Aa]ssets/StreamingAssets/GGUF/*
 *.gguf
+/[Aa]ssets/TextMesh Pro/Resources/Fonts & Materials/*
