@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.29803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1496,7 +1496,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1667,8 +1667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 850, y: 250}
+  m_AnchoredPosition: {x: 30, y: 0}
+  m_SizeDelta: {x: 820, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591982951
 MonoBehaviour:
@@ -1776,7 +1776,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 250}
+  m_SizeDelta: {x: 820, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623924993
 MonoBehaviour:
@@ -2419,7 +2419,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -3213,6 +3213,7 @@ GameObject:
   - component: {fileID: 1535909688}
   - component: {fileID: 1535909687}
   - component: {fileID: 1535909686}
+  - component: {fileID: 1535909689}
   m_Layer: 5
   m_Name: SendButton
   m_TagString: Untagged
@@ -3284,9 +3285,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1790708235}
-        m_TargetAssemblyTypeName: GameManager, UnityPython
-        m_MethodName: SendText
+      - m_Target: {fileID: 1535909689}
+        m_TargetAssemblyTypeName: Resaearch, UnityPython
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3334,6 +3335,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535909683}
   m_CullTransparentMesh: 1
+--- !u!114 &1535909689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535909683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3579fb3b4146a4aa4a8dc3a74a27b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sendText: {fileID: 0}
+  replyText: {fileID: 0}
+  llamaCppConnection: {fileID: 2031538704}
+  sendTexts:
+  - "\u3053\u3093\u306B\u3061\u306F"
+  - "\u300C\u65E5\u5E38\u751F\u6D3B\u306E\u4E2D\u3067\u3001\u3075\u3068\u3057\u305F\u77AC\u9593\u306B\u8A2A\u308C\u308B\u5E78\u305B\u300D\u3068\u3044\u3046\u30C6\u30FC\u30DE\u3067\u3001\u77ED\u4F5C\u6587\u3092\u66F8\u3044\u3066\u304F\u3060\u3055\u3044\u3002"
+  - "\u5BCC\u58EB\u5C71\u306B\u3064\u3044\u3066\u6559\u3048\u3066"
 --- !u!1 &1544458147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,7 +3389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.5000305, y: 0}
+  m_AnchoredPosition: {x: 22, y: 0}
   m_SizeDelta: {x: 850, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544458149
@@ -3512,6 +3532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f712d22fce87b254ca2e57cbea3c47df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modelText: {fileID: 763826591}
+  inputText: {fileID: 1007112821}
+  sendText: {fileID: 1184273889}
+  replyText: {fileID: 1544458149}
+  tokenText: {fileID: 1068113335}
   llamaCppConnection: {fileID: 2031538704}
 --- !u!4 &1790708236
 Transform:
@@ -3765,7 +3790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.29803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -17,7 +17,7 @@ namespace UnityPython {
 			try {
 				await _semaphoreSlim.WaitAsync(destroyCancellationToken);
 				state = PythonEngine.BeginAllowThreads();
-				return  await Task.Run(() => LlamaPython(modelName, userInput, maxToken));
+				return await Task.Run(() => LlamaPython(modelName, userInput, maxToken));
 			}
 			catch (OperationCanceledException e) when (e.CancellationToken != destroyCancellationToken) {
 				return "回答の生成に失敗しました";

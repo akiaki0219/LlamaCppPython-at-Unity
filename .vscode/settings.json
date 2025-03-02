@@ -58,6 +58,7 @@
     },
     "dotnet.defaultSolution": "LlamaCppPython.sln",
     "python.analysis.extraPaths": [
-        "./Assets/StreamingAssets/python-3.11.9-embed-amd64/Lib/site-packages"
+        "./Assets/StreamingAssets/python-3.11.9-embed-amd64/Lib/site-packages",
+        "./Assets/StreamingAssets/python-3.12.7-embed-amd64/Lib/site-packages"
     ]
 }

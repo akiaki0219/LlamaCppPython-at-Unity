@@ -68,10 +68,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
 __pycache__/
 __pycache__.meta
-/[Aa]ssets/StreamingAssets/GGUF/*
-*.gguf
-/[Aa]ssets/TextMesh Pro/Resources/Fonts & Materials/*
+/[Aa]ssets/StreamingAssets/*
+/[Aa]ssets/StreamingAssets.meta
+/Assets/TextMesh Pro/Resources/Fonts & Materials/*.asset
